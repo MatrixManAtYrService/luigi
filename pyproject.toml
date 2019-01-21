@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "luigi"
+version = "0.1.0"
+description = "compose python functions in shell pipelines, let luigi handle the shit"
+authors = ["MatrixManAtYrService <github@matt.rixman.org>"]
+license = "MPL-2.0"
+
+[tool.poetry.dependencies]
+python = ">= 3.6"
+psutil = "^5.4"
+networkx = "^2.2"
+pydot = "^1.4"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.2"
+
+[tool.poetry.scripts]
+add = "example.interface:add"
+sub = "example.interface:sub"
+say = "example.interface:say"
+count = "example.interface:count"
+shout = "example.interface:shout"
+whisper = "example.interface:whisper"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
