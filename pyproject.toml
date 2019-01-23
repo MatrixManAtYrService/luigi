@@ -10,6 +10,7 @@ python = ">= 3.6"
 psutil = "^5.4"
 networkx = "^2.2"
 pydot = "^1.4"
+yattag = "^1.10"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.2"

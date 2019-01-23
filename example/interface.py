@@ -34,6 +34,8 @@ def whisper():
     call.fromcli(app.whisper)
 define.func(whisper, (Words, Words))
 
+define.write_svg()
+define.write_html()
 print(define.as_dot())
 
 
